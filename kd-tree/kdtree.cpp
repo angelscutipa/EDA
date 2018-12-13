@@ -151,7 +151,7 @@ void KDtree::check(nodo *p){
 	}
 	if ((*p).puntos.size()>this->n && !(*p).next[0])
 	{
-		int ind=rand()%5;												//esta parte nomas ya falta para que cambie el ind y no lo elimine
+		int ind=rand()%2;												//esta parte nomas ya falta para que cambie el ind y no lo elimine
 		if ((*p).puntos[0].pts[ind]==(*p).puntos[1].pts[ind]){
 			(*p).puntos.erase(begin((*p).puntos) + 1);
 			return;
